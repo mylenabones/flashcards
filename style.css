@@ -4,3 +4,16 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
+footer{
+  background-color: darksalmon;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 1005;
+  height: 2rem;
+}
+footer p {
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 0.5rem;
+}
