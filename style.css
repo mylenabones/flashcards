@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(48, 5, 27);
+  background-color: rgb(5, 0, 3);
   color: aliceblue;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
@@ -16,4 +16,25 @@ footer p {
   text-align: center;
   font-size: 0.6rem;
   margin-top: 0.5rem;
+}
+:root{
+  --text-color:#000000;
+  --card-front-color:#000000;
+  --card-back-color:#000000;
+}
+#container{
+  display: flex;
+}
+.cartao{
+  margin: 1rem 1rem;
+  height: 20rem;
+  flex-wrap: 1;
+  flex-basis: calc(33%-6rem);
+}
+.cartao-conteúdo{
+  text-align: center;
+  background-color: darksalmon;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out ;
 }
