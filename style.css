@@ -1,11 +1,11 @@
 body{
-  background-color: rgb(5, 0, 3);
+  background-color: rgb(37, 1, 23);
   color: aliceblue;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
 }
 footer{
-  background-color: darksalmon;
+  background-color: rgb(107, 17, 72);
   color: black;
   position: fixed;
   bottom: 0;
@@ -31,14 +31,14 @@ footer p {
   flex-wrap: 1;
   flex-basis: calc(33%-6rem);
 }
-.cartao-conteúdo{
+.cartao-conteudo{
   text-align: center;
-  background-color: darksalmon;
+  background-color: rgb(87, 16, 69);
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 300ms ease-in-out;
 }
-.corpo-conteúdo h3{
+.cartao-conteudo h3{
   color: var(--text-color);
   border: 1px solid var(--text-color);
   text-align: left;
@@ -49,11 +49,21 @@ footer p {
   font-size: 1vw;
   backface-visibility: hidden;
 }
-.cartao-conteúdo-pergunta p{
+.cartao-conteudo-pergunta p{
   color: var(--text-color);
   font-weight: 500;
 }
-.cartao-conteúdo-resposta p{
+.cartao-conteudo-resposta p{
   color: var(--card-back-color);
   font-weight: 700;
+}
+.cartao:hover .cartao-conteudo{
+  transform: rotaty(180deg);
+}
+.cartao-conteudo-pergunta,
+.cartao-conteudo-resposta{
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
